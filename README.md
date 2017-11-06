@@ -22,3 +22,6 @@
 
 ## Delete all existing Containers:
 * docker-compose down
+
+## Enter in the container:
+* docker-compose exec {container-name} bash
