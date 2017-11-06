@@ -13,10 +13,8 @@
 * docker-compose ps
 
 ## Close running containers:
-
 ### All:
 * docker-compose stop
-
 ### Single:
 * docker-compose stop {container-name}
 
@@ -25,3 +23,6 @@
 
 ## Enter in the container:
 * docker-compose exec {container-name} bash
+
+## Build and rebuild container:
+* docker-compose build {container-name}
