@@ -18,7 +18,7 @@
 
     <!-- Custom Style Sheet -->
     <link href="/files/style.css" rel="stylesheet">
-
+    <link rel="icon" href="/files/Cake-Chocolate.ico">
 </head>
 
 <body>
@@ -122,7 +122,7 @@
             @foreach(App\Product::all()->chunk(3) as $products_chunk)
                 @foreach($products_chunk as $product)
                     <div class="col-md-4 product-box">
-                        <div class="rate">{{$product->price}}р.</div>
+                        <div class="rate" style="border-bottom-right-radius: 25px;">{{$product->price}}р.</div>
                         <img src="/storage/{{$product->image}}" alt="">
                         <h3>{{$product->name}}</h3>
                         <p>{{mb_substr($product->description, 0, 100)}}</p>
