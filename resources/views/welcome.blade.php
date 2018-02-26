@@ -218,10 +218,10 @@
             <div class="modal-body">
                 <img src="" style="width: 100%; border-radius: 5px">
                 <p id=description style="margin-top: 20px; font-size: 1.8rem;"></p>
-                <p id=price style="margin-top: 25px; font-size: 1.9rem;"></p>
-                <p id=price_for_kg style="font-size: 1.9rem;"></p>
-                <p id=weight style="font-size: 1.9rem;"></p>
-                <p id=servings_count style="font-size: 1.9rem;"></p>
+                <p id=price style="margin-top: 25px;margin-bottom: 0; font-size: 2rem;"></p>
+                <p id=weight style="margin-bottom: 10px; font-size: 2rem;"></p>
+                <p id=price_for_kg style="margin: 0; font-size: 1.7rem;"></p>
+                <p id=servings_count style="margin: 0; font-size: 1.7rem;"></p>
             </div>
         </div>
 
