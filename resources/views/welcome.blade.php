@@ -64,7 +64,7 @@
                         <div class="rate" style="border-bottom-right-radius: 25px;">{{$product->price}}р.</div>
                         <img src="/storage/{{$product->image}}" alt="">
                         <h3>{{$product->name}}</h3>
-                        <p>{{mb_substr($product->description, 0, 100)}}</p>
+                        <p>{{mb_substr($product->description, 0, 150)}}...</p>
                         <span style="display: none;">{{$product->description}}</span>
                         <span style="display: none;">{{$product->weight}}</span>
                         <span style="display: none;">{{$product->price_for_kg}}</span>
@@ -96,7 +96,7 @@
                 <p><strong>Адрес: </strong>
                     <em><a style="color: #5f3210;font-size: 1.6rem;" href="https://yandex.ru/maps/-/CBe6v6czCC">Владивосток, пр.Красного Знамени, 133в</a></em></p>
                 <p><strong>E-mail:</strong><em> <a style="color: #5f3210;" href="mailto:mr.rogalik.vl@gmail.com">mr.rogalik.vl@gmail.com</a></em></p>
-                <p><strong>Phone:</strong><em> <a style="color: #5f3210;" href="tel:+79084422848">8 (908) 442-28-48</a></em></p>
+                <p><strong>Телефон:</strong><em> <a style="color: #5f3210;" href="tel:+79084422848">8 (908) 442-28-48</a></em></p>
                 <p>
                     <a style="color: #5f3210;" href="https://api.whatsapp.com/send?phone=79084422848"><img style="width:4vh" src="/files/whatsapp.png"></a>
                     <a style="color: #5f3210;" href="tg://resolve?domain=fireeagle25"><img style="width:4vh" src="/files/telegram.png"></a>
