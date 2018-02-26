@@ -22,21 +22,7 @@
 </head>
 
 <body>
-<!-- =========================
-     Pre-loader
-============================== -->
 
-<div id="loading" style="display: none;">
-    <div id="loading-center">
-        <div id="loading-center-absolute">
-            <div id="object" style="display: none;"><i class="flaticon-bakery-fill-15-108047"></i></div>
-        </div>
-    </div>
-</div>
-
-<!-- =========================
-	1. Section - Header
-============================== -->
 <header>
     <div class="overlay">
         <div class="container">
@@ -51,9 +37,7 @@
         </div>
     </div>
 </header>
-<!-- =========================
-	2. Section - Hand Made
-============================== -->
+
 <section class="clearfix hand-made">
     <div class="container">
         <!-- Left Part -->
@@ -69,52 +53,7 @@
         <!-- /End Right Part  -->
     </div>
 </section>
-<!-- =========================
-	3. Section - celebrations
-============================== -->
-<!--section class="celebrations">
-<div class="overlay">
-  <div class="container">
-    <h2>Enjoy your Private celebrations<br>
-      with us!</h2>
-    <div class="separator white"></div>
-    <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin,<br>
-      lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-    <div class="clearfix"></div>
 
-    <div class="col-sm-4">
-      <div class="cake-box">
-        <div class="cake-top"><i class="flaticon-bakery-fill-15-108047"></i></div>
-        <h3>Wedding Cake</h3>
-        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
-        <button>order now</button>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="cake-box">
-        <div class="cake-top"><i class="flaticon-bakery-fill-8-108040"></i></div>
-        <h3>Birthday Cake</h3>
-        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
-        <button>order now</button>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="cake-box">
-        <div class="cake-top"><i class="flaticon-bakery-fill-16-108048"></i></div>
-        <h3>Sweet Treats</h3>
-        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
-        <button>order now</button>
-      </div>
-    </div>
-
-  </div>
-  </div>
-</section-->
-<!-- =========================
-	4. Section - Our Speciality
-============================== -->
 <section style="padding: 25px 0; padding-bottom: 100px;" class="our-speciality" id="products">
     <div class="container">
         <h2>Торты и пирожные</h2>
@@ -137,9 +76,7 @@
         </div>
     </div>
 </section>
-<!-- =========================
-	6. Section - Contact Form
-============================== -->
+
 <section class="clearfix contact">
     <div class="container" style="margin-bottom:30px;margin-top:30px;">
         <div class="row float-fix">
@@ -194,9 +131,7 @@
         </div>
     </div>
 </section>
-<!-- =========================
-	7. Section - Footer
-============================== -->
+
 <footer class="clearfix">
     <div class="container">
         <p><strong>Mr.Rogalik © 2018. Все права защищены.</strong></p>

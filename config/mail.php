@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'mr.rogalik.vl@gmail.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'mrrogalik@yandex.ru'),
         'name' => env('MAIL_FROM_NAME', 'Сайт Mr.Rogalik'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => "mr.rogalik.vl@gmail.com",
+    'username' => "mrrogalik@yandex.ru",
 
-    'password' => "",
+    'password' => "Levushkin",
 
     /*
     |--------------------------------------------------------------------------

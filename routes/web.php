@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('/', function ( Illuminate\Http\Request $request) {
-    Illuminate\Support\Facades\Mail::to("nechaev.p.v.25@gmail.com")->send(new \App\Mail\ClientMail($request->name, $request->phone, $request->email, $request->text));
+    Illuminate\Support\Facades\Mail::to("mrrogalik@yandex.ru")->send(new \App\Mail\ClientMail($request->name, $request->phone, $request->email, $request->text));
     return "ok";
 });
 
