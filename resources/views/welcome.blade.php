@@ -1,95 +1,267 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://craftxhtml.com/projects/kingbakers/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <title>Laravel</title>
+    <title>Mr.Rogalik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="/files/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Font Awesome -->
+    <link href="/files/font-awesome.min.css" rel="stylesheet">
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Flat Icons -->
+    <link href="/files/flaticon.css" rel="stylesheet">
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <!-- Custom Style Sheet -->
+    <link href="/files/style.css" rel="stylesheet">
 
-            .position-ref {
-                position: relative;
-            }
+</head>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+<body>
+<!-- =========================
+     Pre-loader
+============================== -->
 
-            .content {
-                text-align: center;
-            }
+<div id="loading" style="display: none;">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object" style="display: none;"><i class="flaticon-bakery-fill-15-108047"></i></div>
+        </div>
+    </div>
+</div>
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+<!-- =========================
+	1. Section - Header
+============================== -->
+<header>
+    <div class="overlay">
+        <div class="container">
+            <!-- Header Left -->
+            <div class="col-sm-7">
+                <div class="company">
+                    <img style="width:70%;"src="/files/rogalik.png" alt=""></a>
+                    <div class="ribbon">Кондитерская</div>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <h1 style="margin-bottom:30px;">Мы воплощаем в реальность ваши самые вкусные мечты</h1>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+</header>
+<!-- =========================
+	2. Section - Hand Made
+============================== -->
+<section class="clearfix hand-made">
+    <div class="container">
+        <!-- Left Part -->
+        <div class="col-sm-6">
+            <h2>Выпечка с любовью</h2>
+            <div class="separator"></div>
+            <p>Все наши торты, кексы, пирожные и многое другое выпекается из лучших ингридиентов. И всегда с любовью.</p>
+            <a style="color:white" href="#products"><button>Посмореть все</button></a>
+        </div>
+        <!-- /End Left Part -->
+        <!-- Right Part -->
+        <div class="col-sm-6 big-cake"><img src="/files/big-cack.png" alt=""> </div>
+        <!-- /End Right Part  -->
+    </div>
+</section>
+<!-- =========================
+	3. Section - celebrations
+============================== -->
+<!--section class="celebrations">
+<div class="overlay">
+  <div class="container">
+    <h2>Enjoy your Private celebrations<br>
+      with us!</h2>
+    <div class="separator white"></div>
+    <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin,<br>
+      lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+    <div class="clearfix"></div>
+
+    <div class="col-sm-4">
+      <div class="cake-box">
+        <div class="cake-top"><i class="flaticon-bakery-fill-15-108047"></i></div>
+        <h3>Wedding Cake</h3>
+        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+        <button>order now</button>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="cake-box">
+        <div class="cake-top"><i class="flaticon-bakery-fill-8-108040"></i></div>
+        <h3>Birthday Cake</h3>
+        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+        <button>order now</button>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="cake-box">
+        <div class="cake-top"><i class="flaticon-bakery-fill-16-108048"></i></div>
+        <h3>Sweet Treats</h3>
+        <p>Lorem ipsum dolor sit amet, elit fusce auctor nec nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+        <button>order now</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</section-->
+<!-- =========================
+	4. Section - Our Speciality
+============================== -->
+<section style="padding: 25px 0; padding-bottom: 100px;" class="our-speciality" id="products">
+    <div class="container">
+        <h2>Торты и пирожные</h2>
+        <div class="col-md-12" style="margin-top: 100px">
+            @foreach(App\Product::all()->chunk(3) as $products_chunk)
+                @foreach($products_chunk as $product)
+                    <div class="col-md-4 product-box">
+                        <div class="rate">{{$product->price}}р.</div>
+                        <img src="/storage/{{$product->image}}" alt="">
+                        <h3>{{$product->name}}</h3>
+                        <p>{{mb_substr($product->description, 0, 100)}}</p>
+                        <span style="display: none;">{{$product->description}}</span>
+                    </div>
+                @endforeach
+                <div class="clearfix"></div>
+            @endforeach
+        </div>
+    </div>
+</section>
+<!-- =========================
+	6. Section - Contact Form
+============================== -->
+<section class="clearfix contact">
+    <div class="container" style="margin-bottom:30px;margin-top:30px;">
+        <div class="row float-fix">
+            <!-- Left Pert -->
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3">
+                <h3 class="clear-top">Время работы</h3>
+                <ul class="time-list">
+                    <li><span>Понедельник:</span>с 10.00 до 23.00</li>
+                    <li><span>Вторник:</span>с 10.00 до 23.00</li>
+                    <li><span>Среда:</span>с 10.00 до 23.00</li>
+                    <li><span>Четверг:</span>с 10.00 до 23.00</li>
+                    <li><span>Пятница:</span>с 10.00 до 23.00</li>
+                    <li><span>Суббота:</span>с 10.00 до 23.00</li>
+                    <li><span>Восресенье:</span>с 10.00 до 23.00</li>
+                </ul>
+                <h3>Контакты</h3>
+                <p><strong>Адрес: </strong>
+                    <em><a style="color: #5f3210;font-size: 1.6rem;" href="https://yandex.ru/maps/-/CBe6v6czCC">Владивосток, пр.Красного Знамени, 133в</a></em></p>
+                <p><strong>E-mail:</strong><em> <a style="color: #5f3210;" href="mailto:mr.rogalik.vl@gmail.com">mr.rogalik.vl@gmail.com</a></em></p>
+                <p><strong>Phone:</strong><em> <a style="color: #5f3210;" href="tel:+79084422848">8 (908) 442-28-48</a></em></p>
+                <p>
+                    <a style="color: #5f3210;" href="https://api.whatsapp.com/send?phone=79084422848"><img style="width:4vh" src="/files/whatsapp.png"></a>
+                    <a style="color: #5f3210;" href="tg://resolve?domain=fireeagle25"><img style="width:4vh" src="/files/telegram.png"></a>
+                </p>
+
+            </div>
+            <!-- /End Left Pert -->
+
+            <!-- Center Part -->
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                <div id="join-us-form" class="footer-form">
+                    <div id="join-us-results"></div>
+                    <div class="footer-logo"><img src="/files/rogalik.png" alt=""></div>
+                    <h3 style="color: #5f3210">Ждем вас</h3>
+                    <!-- Form -->
+                    <div class="form-group">
+                        <input id="client_name" type="text" name="name" class="f-input input-field" placeholder="Как к вам обращаться?">
+                    </div>
+                    <div class="form-group">
+                        <input id="client_email" type="text" name="email" class="f-input input-field" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input id="client_phone" type="text" name="phone" maxlength="15" class="f-input input-field" placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="client_message" name="message" class="f-input input-field" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submit_btn" onclick="sendMessage()">Отправить</button>
+                </div>
+            </div>
+            <!-- /End Center Part -->
+        </div>
+    </div>
+</section>
+<!-- =========================
+	7. Section - Footer
+============================== -->
+<footer class="clearfix">
+    <div class="container">
+        <p><strong>Mr.Rogalik © 2018. Все права защищены.</strong></p>
+        <p class="clear-bottom"><small>Site Designed &amp; Developed: <a style="color:white" href="http://awake.su">Awake!</a></small></p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="product" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="color: #533537;">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background: #fdf2eb">
+
+            <div class="modal-header" style="border-bottom: 7px double #f2a94e;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="name"></h4>
+            </div>
+            <div class="modal-body">
+                <img src="" style="width: 100%; border-radius: 5px">
+                <p id=description style="margin-top: 20px; font-size: 1.8rem;"></p>
+                <p id=price style="margin-top: 25px; font-size: 1.9rem;"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =========================
+     Scripts
+============================== -->
+
+<!-- Jquery -->
+<script src="/files/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="/files/bootstrap.min.js"></script>
+
+<!-- Custom -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.product-box').click(function (event) {
+            event.preventDefault();
+            var e = $(this);
+
+            $('#price').text("Стоимость: " + $(e[0]).find('div')[0].innerHTML);
+            $('#name').text($(e[0]).find('h3')[0].innerHTML);
+            $('#description').text($(e[0]).find('span')[0].innerHTML);
+            $('.modal-body').find('img').attr('src', $($(e[0]).find('img')[0]).attr('src'));
+
+            $("#product").modal("show");
+        });
+    });
+
+    function sendMessage() {
+        var data = {
+            message: $('#client_message').val(),
+            phone: $('#client_phone').val(),
+            email: $('#client_email').val(),
+            name: $('#client_name').val(),
+        };
+
+        $.post( "/", data).done(function(data) {
+            $('#submit_btn').css('background', '#47984b');
+            $('#submit_btn').text('Отправлено');
+            $('#submit_btn').attr("disabled", true);
+        });
+    }
+</script>
+</body></html>
