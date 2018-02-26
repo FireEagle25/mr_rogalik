@@ -127,6 +127,9 @@
                         <h3>{{$product->name}}</h3>
                         <p>{{mb_substr($product->description, 0, 100)}}</p>
                         <span style="display: none;">{{$product->description}}</span>
+                        <span style="display: none;">{{$product->weight}}</span>
+                        <span style="display: none;">{{$product->price_for_kg}}</span>
+                        <span style="display: none;">{{$product->servings_count}}</span>
                     </div>
                 @endforeach
                 <div class="clearfix"></div>
@@ -216,6 +219,9 @@
                 <img src="" style="width: 100%; border-radius: 5px">
                 <p id=description style="margin-top: 20px; font-size: 1.8rem;"></p>
                 <p id=price style="margin-top: 25px; font-size: 1.9rem;"></p>
+                <p id=price_for_kg style="font-size: 1.9rem;"></p>
+                <p id=weight style="font-size: 1.9rem;"></p>
+                <p id=servings_count style="font-size: 1.9rem;"></p>
             </div>
         </div>
 
@@ -242,6 +248,10 @@
 
             $('#price').text("Стоимость: " + $(e[0]).find('div')[0].innerHTML);
             $('#name').text($(e[0]).find('h3')[0].innerHTML);
+            $('#description').text($(e[0]).find('span')[0].innerHTML);
+            $('#weight').text("Вес: " + $(e[0]).find('span')[1].innerHTML + "кг");
+            $('#price_for_kg').text("Цена за килограм: " + $(e[0]).find('span')[2].innerHTML + " р.");
+            $('#servings_count').text("Количество порций: " + $(e[0]).find('span')[3].innerHTML);
             $('#description').text($(e[0]).find('span')[0].innerHTML);
             $('.modal-body').find('img').attr('src', $($(e[0]).find('img')[0]).attr('src'));
 
