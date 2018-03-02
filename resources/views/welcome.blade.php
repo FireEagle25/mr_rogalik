@@ -99,7 +99,7 @@
                 <p><strong>Телефон:</strong><em> <a style="color: #5f3210;" href="tel:+79084422848">8 (908) 442-28-48</a></em></p>
                 <p>
                     <a style="color: #5f3210;" href="https://api.whatsapp.com/send?phone=79084422848"><img style="width:4vh" src="/files/whatsapp.png"></a>
-                    <a style="color: #5f3210;" href="tg://resolve?domain=fireeagle25"><img style="width:4vh" src="/files/telegram.png"></a>
+                    <a style="color: #5f3210;" href="tg://resolve?domain=mrrogalik"><img style="width:4vh" src="/files/telegram.png"></a>
                 </p>
 
             </div>
@@ -134,7 +134,7 @@
 
 <footer class="clearfix">
     <div class="container">
-        <p><strong>Mr.Rogalik © 2018. Все права защищены.</strong></p>
+        <p><strong>Mr.Rogalik © 2017 - {{date("Y")}}. Все права защищены.</strong></p>
         <p class="clear-bottom"><small>Site Designed &amp; Developed: <a style="color:white" href="http://awake.su">Awake!</a></small></p>
     </div>
 </footer>
