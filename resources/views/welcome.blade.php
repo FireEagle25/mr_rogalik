@@ -2,23 +2,42 @@
 <!-- saved from url=(0042)http://craftxhtml.com/projects/kingbakers/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Mr.Rogalik</title>
+    <title>Mr.Rogalik. Торты, пироги на заказ во Владивостоке. Низкие цены. Бесплатная доставка.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Кондитерская Мистер Рогалик во Владивостоке. Печём торты, пироги, пирожные вкусно, по-домашнему.">
     <meta name="author" content="">
+    <meta name="yandex-verification" content="260256337bf35ffb" />
 
     <!-- Bootstrap -->
-    <link href="/files/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="/files/font-awesome.min.css" rel="stylesheet">
+    <link href="/font-awesome.min.css" rel="stylesheet">
 
     <!-- Flat Icons -->
-    <link href="/files/flaticon.css" rel="stylesheet">
+    <link href="/flaticon.css" rel="stylesheet">
 
     <!-- Custom Style Sheet -->
-    <link href="/files/style.css" rel="stylesheet">
-    <link rel="icon" href="/files/Cake-Chocolate.ico">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/Cake-Chocolate.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133673729-1"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag('js', new Date());
+
+
+
+        gtag('config', 'UA-133673729-1');
+
+    </script>
 </head>
 
 <body>
@@ -29,7 +48,7 @@
             <!-- Header Left -->
             <div class="col-sm-7">
                 <div class="company">
-                    <img style="width:70%;"src="/files/rogalik.png" alt=""></a>
+                    <img style="width:70%;"src="/rogalik.png" alt=""></a>
                     <div class="ribbon">Кондитерская</div>
                 </div>
                 <h1 style="margin-bottom:30px;">Мы воплощаем в реальность ваши самые вкусные мечты</h1>
@@ -49,7 +68,7 @@
         </div>
         <!-- /End Left Part -->
         <!-- Right Part -->
-        <div class="col-sm-6 big-cake"><img src="/files/big-cack.png" alt=""> </div>
+        <div class="col-sm-6 big-cake"><img src="/big-cack.png" alt=""> </div>
         <!-- /End Right Part  -->
     </div>
 </section>
@@ -61,14 +80,14 @@
             @foreach(App\Product::all()->chunk(3) as $products_chunk)
                 @foreach($products_chunk as $product)
                     <div class="col-md-4 product-box">
-                        <div class="rate" style="border-bottom-right-radius: 25px;">{{$product->price}}р.</div>
+                        <div class="rate" style="border-bottom-right-radius: 25px;">{{$product->price_for_kg}}р./кг</div>
                         <img src="/storage/{{$product->image}}" alt="">
                         <h3>{{$product->name}}</h3>
                         <p>{{mb_substr($product->description, 0, 150)}}...</p>
                         <span style="display: none;">{{$product->description}}</span>
                         <span style="display: none;">{{$product->weight}}</span>
-                        <span style="display: none;">{{$product->price_for_kg}}</span>
-                        <span style="display: none;">{{$product->servings_count}}</span>
+                        {{--<span style="display: none;">{{$product->price_for_kg}}</span>--}}
+                        {{--<span style="display: none;">{{$product->servings_count}}</span>--}}
                     </div>
                 @endforeach
                 <div class="clearfix"></div>
@@ -98,8 +117,8 @@
                 <p><strong>E-mail:</strong><em> <a style="color: #5f3210;" href="mailto:mr.rogalik.vl@gmail.com">mr.rogalik.vl@gmail.com</a></em></p>
                 <p><strong>Телефон:</strong><em> <a style="color: #5f3210;" href="tel:+79084422848">8 (908) 442-28-48</a></em></p>
                 <p>
-                    <a style="color: #5f3210;" href="https://api.whatsapp.com/send?phone=79084422848"><img style="width:4vh" src="/files/whatsapp.png"></a>
-                    <a style="color: #5f3210;" href="tg://resolve?domain=mrrogalik"><img style="width:4vh" src="/files/telegram.png"></a>
+                    <a style="color: #5f3210;" href="https://api.whatsapp.com/send?phone=79084422848"><img style="width:4vh" src="/whatsapp.png"></a>
+                    <a style="color: #5f3210;" href="tg://resolve?domain=mrrogalik"><img style="width:4vh" src="/telegram.png"></a>
                 </p>
 
             </div>
@@ -109,7 +128,7 @@
             <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
                 <div id="join-us-form" class="footer-form">
                     <div id="join-us-results"></div>
-                    <div class="footer-logo"><img src="/files/rogalik.png" alt=""></div>
+                    <div class="footer-logo"><img src="/rogalik.png" alt=""></div>
                     <h3 style="color: #5f3210">Ждем вас</h3>
                     <!-- Form -->
                     <div class="form-group">
@@ -155,8 +174,8 @@
                 <p id=description style="margin-top: 20px; font-size: 1.8rem;"></p>
                 <p id=price style="margin-top: 25px;margin-bottom: 0; font-size: 2rem;"></p>
                 <p id=weight style="margin-bottom: 10px; font-size: 2rem;"></p>
-                <p id=price_for_kg style="margin: 0; font-size: 1.7rem;"></p>
-                <p id=servings_count style="margin: 0; font-size: 1.7rem;"></p>
+                {{--<p id=price_for_kg style="margin: 0; font-size: 1.7rem;"></p>--}}
+                {{--<p id=servings_count style="margin: 0; font-size: 1.7rem;"></p>--}}
             </div>
         </div>
 
@@ -169,10 +188,10 @@
 ============================== -->
 
 <!-- Jquery -->
-<script src="/files/jquery.min.js"></script>
+<script src="/jquery.min.js"></script>
 
 <!-- Bootstrap -->
-<script type="text/javascript" src="/files/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bootstrap.min.js"></script>
 
 <!-- Custom -->
 <script type="text/javascript">
@@ -185,8 +204,8 @@
             $('#name').text($(e[0]).find('h3')[0].innerHTML);
             $('#description').text($(e[0]).find('span')[0].innerHTML);
             $('#weight').text("Вес: " + $(e[0]).find('span')[1].innerHTML + "кг");
-            $('#price_for_kg').text("Цена за килограм: " + $(e[0]).find('span')[2].innerHTML + " р.");
-            $('#servings_count').text("Количество порций: " + $(e[0]).find('span')[3].innerHTML);
+            //$('#price_for_kg').text("Цена за килограм: " + $(e[0]).find('span')[2].innerHTML + " р.");
+            //$('#servings_count').text("Количество порций: " + $(e[0]).find('span')[3].innerHTML);
             $('#description').text($(e[0]).find('span')[0].innerHTML);
             $('.modal-body').find('img').attr('src', $($(e[0]).find('img')[0]).attr('src'));
 
